@@ -1,6 +1,6 @@
 //load data into structure
 var fs = require('fs')
-var data = fs.readFileSync('data.txt','utf8').toString().split("\n");
+var data = fs.readFileSync('./d2/data.txt','utf8').toString().split("\n");
 
 const rps = {
   AX:4, //'draw', 3+1
