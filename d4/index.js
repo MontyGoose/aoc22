@@ -16,8 +16,8 @@ for (let assigmment of data) {
     }
 
    console.log(clean)
-    if ((clean[0] >= clean[2] && clean[1] <= clean[3]) || (clean[2] >= clean[0] && clean[3] <= clean[1]) || 
-        (clean[0] <= clean[2] && clean[1] >= clean[2]) || (clean[2] <= clean[0] && clean[3] >= clean[0])) {
+    if ((clean[0] >= clean[2] && clean[1] <= clean[3]) || (clean[2] >= clean[0] && clean[3] <= clean[1]) ||   //part1
+        (clean[0] <= clean[2] && clean[1] >= clean[2]) || (clean[2] <= clean[0] && clean[3] >= clean[0])) {   //part2
         console.log("found")
         found++
     }
