@@ -33,10 +33,7 @@ let stacks = real_stacks
 //part2
 for (let move of data) {
     moves = move.split(' '); // crates to move moves[1] ; from moves[3] ; to moves[5]
-    let crates = stacks[moves[3]].splice(0 - moves[1], moves[1]);
-    for (let crate of crates) {
-        stacks[moves[5]].push(crate);
-    }
+        stacks[moves[5]].concat(stacks[moves[3]].splice(0 - moves[1], moves[1]));
 }
 
 
