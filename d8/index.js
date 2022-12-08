@@ -11,7 +11,7 @@ for (let rows of data) {
 for (let row in trees) {
     for (let tree in trees[row]) {
         //ignore outside trees
-        if (row !== 0 || row !== trees.length-1 || tree !== 0 || tree !== trees.length-1){
+        if (row != 0 && row != trees.length-1 && tree != 0 && tree != trees.length-1){
             console.log(row,tree)
 
         }
