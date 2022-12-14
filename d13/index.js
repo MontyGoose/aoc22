@@ -70,9 +70,11 @@ let pivot = (arr, start = 0, end = arr.length + 1) => {
 //part two results
 console.log(pairs2)
 let sorted = quickSort(pairs2)
-let key = (sorted.findIndex(a=>a=='[[2]]')+1)*(sorted.findIndex(a=>a=='[[6]]')+1)
-console.log(key)
+// let key = (sorted.findIndex(a=>a=='[[2]]')+1)*(sorted.findIndex(a=>a=='[[6]]')+1)
+// console.log(key)
 
+
+//the comparison function for both part1 and part2
 function checkArray(left, right) {
     let size = (left.length > right.length) ? left.length : right.length;
     for (let x = 0; x < size; x++) {
